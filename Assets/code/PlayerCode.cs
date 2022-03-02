@@ -12,7 +12,7 @@ public class PlayerCode : MonoBehaviour
     public Transform spawnPos;
 
     int speed = 10;
-    int jumpForce = 800;
+    int jumpForce = 20;
     int bulletForce = 100;
 
     public LayerMask groundLayer;

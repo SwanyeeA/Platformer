@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Enemy: MonoBehaviour
 {
+
+    public GameObject explosion;
     Animator _animator;  
     void Start()
     {
@@ -15,6 +17,7 @@ public class Enemy: MonoBehaviour
     {
         if(other.CompareTag("Bullet"))
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             _animator.SetTrigger("Die");
             Destroy(gameObject, .5f);
