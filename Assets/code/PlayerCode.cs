@@ -23,7 +23,6 @@ public class PlayerCode : MonoBehaviour
 
     bool grounded = false;
 
-    
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
