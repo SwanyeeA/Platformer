@@ -1,6 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+//Blurry sprites
+//restart level
+//Anchor for stars
+//tell us about the game
+//what works what didn't work
+//what waas the concept
+//how did you arrive on the concept
+//triumps setbacks
+//who did what on team
 
 public class PlayerCode : MonoBehaviour
 {
@@ -9,7 +19,10 @@ public class PlayerCode : MonoBehaviour
     Animator _animator;
 
     public GameObject bulletPrefab;
+
     public Transform spawnPos;
+
+    bool isAlive = true;
 
     int speed = 10;
     int jumpForce = 20;
@@ -33,6 +46,12 @@ public class PlayerCode : MonoBehaviour
     {
         grounded = Physics2D.OverlapCircle(FeetTrans.position, groundCheckDist, groundLayer);
         _animator.SetBool("Grounded", grounded);
+
+        if(isAlive && transform.position.y < -25)
+        {
+            isAlive = false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 
