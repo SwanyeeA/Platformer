@@ -25,7 +25,7 @@ public class PlayerCode : MonoBehaviour
     bool isAlive = true;
 
     int speed = 10;
-    int jumpForce = 6;
+    int jumpForce = 20;
     int bulletForce = 100;
 
     public LayerMask groundLayer;
@@ -54,6 +54,14 @@ public class PlayerCode : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            isAlive = false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
 
     void Update()
     {

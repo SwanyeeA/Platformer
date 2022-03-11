@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
-
 public class Enemy: MonoBehaviour
 {
 
@@ -40,12 +38,12 @@ public class Enemy: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bullet"))
+        if (other.CompareTag("bullet"))
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             _animator.SetTrigger("Die");
-            Destroy(gameObject, .15f);
+            Destroy(gameObject, .5f);
         }
     }
 
