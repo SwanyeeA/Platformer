@@ -25,7 +25,7 @@ public class PlayerCode : MonoBehaviour
     bool isAlive = true;
 
     int speed = 10;
-    int jumpForce = 20;
+    int jumpForce = 6;
     int bulletForce = 100;
 
     public LayerMask groundLayer;
