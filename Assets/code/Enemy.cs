@@ -17,7 +17,7 @@ public class Enemy: MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectsWithTag("Player").transform;
+        player = GameObject.FindWithTag("Player").transform;
         StartCoroutine(SlimeMove());
     }
 
