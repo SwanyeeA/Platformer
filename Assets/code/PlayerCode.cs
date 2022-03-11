@@ -47,7 +47,7 @@ public class PlayerCode : MonoBehaviour
         grounded = Physics2D.OverlapCircle(FeetTrans.position, groundCheckDist, groundLayer);
         _animator.SetBool("Grounded", grounded);
 
-        if(isAlive && transform.position.y < -25)
+        if(isAlive && transform.position.y < -75)
         {
             isAlive = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
