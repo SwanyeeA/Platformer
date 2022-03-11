@@ -1159,6 +1159,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 0.040722452
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 0.04087834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.03386698
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.04087832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -0.044384822
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 0.03336118
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
+      value: 0.05165134
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510765458731527693, guid: 236b77c7339664cd6844730336d5693a, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
+      value: 0.028349537
+      objectReference: {fileID: 0}
     - target: {fileID: 4510765458731527702, guid: 236b77c7339664cd6844730336d5693a, type: 3}
       propertyPath: m_Name
       value: Cowboy
