@@ -40,10 +40,9 @@ public class Enemy: MonoBehaviour
     {
         if (other.CompareTag("bullet"))
         {
-            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             _animator.SetTrigger("Die");
-            Destroy(gameObject, .5f);
+            Destroy(gameObject, .15f);
         }
     }
 
