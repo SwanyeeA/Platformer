@@ -25,7 +25,7 @@ public class PlayerCode : MonoBehaviour
     bool isAlive = true;
 
     int speed = 10;
-    int jumpForce = 20;
+    int jumpForce = 6;
     int bulletForce = 100;
 
     public LayerMask groundLayer;
@@ -47,7 +47,7 @@ public class PlayerCode : MonoBehaviour
         grounded = Physics2D.OverlapCircle(FeetTrans.position, groundCheckDist, groundLayer);
         _animator.SetBool("Grounded", grounded);
 
-        if(isAlive && transform.position.y < -25)
+        if(isAlive && transform.position.y < -75)
         {
             isAlive = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
